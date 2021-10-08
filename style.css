@@ -1,0 +1,27 @@
+
+*{
+    background-color: #333;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #ffff;
+    margin: 100px auto;
+    position: relative
+    ;
+    animation-name: myanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay:1s;
+}
+
+@keyframes myanimation{
+    0% {background-color: #ffff; left: 0px; top: 0px;}
+    25%{ background-color: rgb(56, 136, 136); left: 300px; top: 0px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%;
+    }
+    50%{background-color: rgb(78, 32, 204); left: 300px; top: 300px;}
+    75%{ background-color: rgb(100, 26, 94); left: 0px; top: 300px; border-radius: 0 25; -webkit-border-radius: 0 25% 0 50%; -moz-border-radius: 0 25; -ms-border-radius: 0 25; -o-border-radius: 0 25; 
+     }
+    100%{background-color: rgb(30, 206, 97); left: 0px; top: 0px;}
+}
